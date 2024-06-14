@@ -1,7 +1,6 @@
 
 
-public class Primos
-{
+public class Primos implements PrimosInterface {
 
  public static int[] generarprimos(int max)
  {
@@ -13,7 +12,7 @@ public class Primos
  boolean[] esPrimo = new boolean[dim];
 
  // Inicializar el array
-  extracted(dim, esPrimo);
+  PrimosInterface.extracted(dim, esPrimo);
 
   // Eliminar el 0 y el 1, que no son primos
  esPrimo[0] = esPrimo[1] = false;
@@ -48,10 +47,4 @@ public class Primos
  }
  }
 
- private static void extracted(int dim, boolean[] esPrimo) {
-  int i;
-  for (i=1; i< dim; i++)
-  esPrimo[i] = true;
-
- }
 }
