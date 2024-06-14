@@ -3,7 +3,7 @@
 public class Primos
 {
 
- public static int[] generarPrimos (int max)
+ public static int[] generarprimos(int max)
  {
  int i,j;
  if (max >= 2) {
@@ -13,10 +13,9 @@ public class Primos
  boolean[] esPrimo = new boolean[dim];
 
  // Inicializar el array
- for (i=0; i<dim; i++)
- esPrimo[i] = true;
+  extracted(dim, esPrimo);
 
- // Eliminar el 0 y el 1, que no son primos
+  // Eliminar el 0 y el 1, que no son primos
  esPrimo[0] = esPrimo[1] = false;
 
  // Criba
@@ -47,5 +46,12 @@ public class Primos
 
  return new int[0]; // Vector vacío
  }
+ }
+
+ private static void extracted(int dim, boolean[] esPrimo) {
+  int i;
+  for (i=1; i< dim; i++)
+  esPrimo[i] = true;
+
  }
 }
