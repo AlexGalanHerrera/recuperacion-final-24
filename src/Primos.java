@@ -8,8 +8,7 @@ public class Primos
  int i,j;
  if (max >= 2) { 
  
- // Declaraciones
- int dim = max + 1; // Tamaño del array 
+ int dim = max + 1; // Tamaño del array
  boolean[] esPrimo = new boolean[dim]; 
  
  // Inicializar el array
