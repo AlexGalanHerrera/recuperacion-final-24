@@ -1,5 +1,3 @@
-
-
 public class Primos implements PrimosInterface {
 
  public static int[] generarprimos(int max)
